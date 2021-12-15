@@ -33,7 +33,7 @@ for i in tqdm(range(len(df))):
 
             elif j == 2:    
                 if df.iloc[i,3] in cate:
-                    df.iloc[i,2] = dfs.iloc[i,3]
+                    df.iloc[i,2] = df.iloc[i,3]
                     df.iloc[i,3] = np.nan
                 else:
                     df.iloc[i,2] = np.nan
